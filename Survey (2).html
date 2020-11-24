@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Style.css"> 
+</head>
+<body background = "https://www.csus.edu/news/files/PARKING_PIC1.jpg">
+    <section>
+      <article>
+        <hgroup>
+          <h1>Survey</h1>
+        </hgroup>
+          
+ <div id="Question0" class="show">
+  <button type="button" data-next="Question1">Start Survey</button>
+</div>         
+<div id="Question1">
+  Will you be taking a personal vehicle to get to school?
+  <button type="button" data-next="Question11">Yes</button>
+  <button type="button" data-next="Question2">No</button>
+</div>
+<div id="Question2">
+  What is the maximum amount of time you are willing to commute?
+  <button type="button" data-next="Question3">Greater than 30 minutes</button>
+  <button type="button" data-next="Question4">Less than 30 minutes</button>
+</div>         
+ <div id="Question3">
+  Try Ride Share or Carpooling!
+<button type="button" data-next="RideshareCarpool">Next</button>      
+</div>          
+<div id="Question4">
+  How much are you willing to spend on commuting each semester?
+  <button type="button" data-next="Question3">Greater than $500</button>
+  <button type="button" data-next="Question6">Less than $500</button>
+  <button type="button" data-next="Question8">Greater than $100</button> 
+</div>
+<div id="Question5">
+  Will you be carpooling?
+  <button type="button" data-next="Question10">Yes</button>
+  <button type="button" data-next="Question10">No</button>
+</div>
+<div id="Question6">
+  Do you know how to ride a bike and/or are willing to ride a bike to campus often?
+  <button type="button" data-next="Question7">Yes</button>
+  <button type="button" data-next="Question8">No</button>
+</div>
+<div id="Question7">
+  Try riding a bike!
+<p><img src="https://images.rove.me/w_1920,q_85/rxtfwodrojrxzabj8gr7/california-tour-of-california.jpg" width="273" height="182" alt = "Bicycle"></p>   
+<button type="button" data-next="Bike">Next</button>     
+</div>            
+<div id="Question8">
+  Are you okay with the uncertainty of a bus schedule?
+  <button type="button" data-next="Question9">Yes</button>
+  <button type="button" data-next="Question10">No</button>
+</div>
+<div id="Question9">
+  Try the shuttle bus schedule/SacRT
+    <p><img src="https://www.sacrt.com/images/rt_general42.jpg" alt = "SacRT"></p>    
+    <button type="button" data-next="Bus">Next</button>  
+    </div>
+<div id="Question10">
+  Maybe walking is for you.
+<button type="button" data-next="Walking">Next</button> 
+</div>            
+<div id="Question11">
+  Is it a car or a motorcycle?
+  <button type="button" data-next="Question12">Car</button>
+  <button type="button" data-next="Question13">Motorcycle</button>
+</div>
+<div id="Question12">
+  Will you be carpooling?
+  <button type="button" data-next="Question13">Yes</button>
+  <button type="button" data-next="Question17">No</button>
+</div>
+<div id="Question13">
+  Do you own your vehicle?
+  <button type="button" data-next="Question14">Yes</button>
+  <button type="button" data-next="Question15">No</button>
+</div>
+ <div id="Question14">
+  How much do you pay for your vehicle each month?
+   <select name="pay" id="pay">   
+  <option value="1984">300</option>
+  <option value="1985">350</option>
+  <option value="1986">400</option>
+  <option value="1987">450</option>
+  <option value="1988">500</option>
+  <option value="1989">550</option>
+  <option value="1990">600</option>
+  <option value="audi">650</option>
+  <option value="volvo">700</option>    
+  </select>   
+  <button type="button" data-next="Question15">Next</button>
+</div>
+ <div id="Question15">
+  <label for="year">What year is your vehicle?</label>
+
+  <select name="year" id="year">   
+  <option value="1984">1984</option>
+  <option value="1985">1985</option>
+  <option value="1986">1986</option>
+  <option value="1987">1987</option>
+  <option value="1988">1988</option>
+  <option value="1989">1989</option>
+  <option value="1990">1990</option>
+  <option value="audi">1991</option>
+  <option value="volvo">1992</option>
+  <option value="saab">1993</option>
+  <option value="mercedes">1994</option>
+  <option value="audi">1995</option>
+  <option value="volvo">1996</option>
+  <option value="saab">1997</option>
+  <option value="mercedes">1998</option>
+  <option value="audi">1999</option>
+  <option value="mercedes">2000</option>
+  <option value="audi">2001</option>  
+  <option value="mercedes">2002</option>
+  <option value="audi">2003</option>  
+  <option value="mercedes">2004</option>
+  <option value="audi">2005</option>
+  <option value="mercedes">2006</option>
+  <option value="audi">2007</option>  
+  <option value="mercedes">2008</option>
+  <option value="audi">2009</option>  
+  <option value="mercedes">2010</option>
+  <option value="audi">2011</option> 
+  <option value="audi">2012</option>  
+  <option value="mercedes">2013</option>
+  <option value="audi">2014</option>  
+  <option value="mercedes">2015</option>
+  <option value="audi">2016</option>
+  <option value="mercedes">2017</option>
+  <option value="audi">2018</option>  
+  <option value="mercedes">2019</option>    
+  <option value="mercedes">2020</option>
+  <option value="audi">2021</option>    
+  </select> 
+  <button type="button" data-next="Question16">Next</button>
+     
+</div>
+          
+ <div id="Question16">
+  <label for="insurance">How much does your insurance cost annually?</label>
+     
+  <select name="insurance" id="insurance">   
+  <option value="volvo">900</option>
+  <option value="saab">1,000</option>
+  <option value="mercedes">1,100</option>
+  <option value="audi">1,200</option>
+  <option value="volvo">1,300</option>
+  <option value="saab">1,400</option>
+  <option value="mercedes">1,500</option>
+  <option value="audi">1,600</option>
+  <option value="volvo">1,700</option>
+  <option value="saab">1,800</option>
+  <option value="mercedes">1,900</option>
+  <option value="audi">2,000</option>
+  <option value="volvo">2,100</option>
+  <option value="saab">2,200</option>
+  <option value="volvo">2,300</option>
+  <option value="saab">2,400</option>
+  <option value="mercedes">2,500</option>
+  <option value="audi">2,600</option>
+  <option value="volvo">2,700</option>
+  <option value="saab">2,800</option>
+  <option value="mercedes">2,900</option>
+  <option value="audi">3,000</option>   
+ </select>      
+  <button type="button" data-next="Question17">Next</button>
+</div>
+     
+<div id="Question17">
+  What kind of fuel do you use?
+  <button type="button" data-next="Question18">Regular</button>
+  <button type="button" data-next="Question18">Midgrade</button>
+  <button type="button" data-next="Question18">Premium</button>
+</div> 
+     
+<div id="Question18">
+  <label for="mileage">What is your annual mileage?</label>
+
+<select name="mileage" id="mileage">
+  <option value="volvo">2,000</option>
+  <option value="saab">3,000</option>
+  <option value="mercedes">4,000</option>
+  <option value="audi">5,000</option>
+  <option value="volvo">6,000</option>
+  <option value="saab">7,000</option>
+  <option value="mercedes">10,000</option>
+  <option value="audi">15,000</option>
+  <option value="volvo">20,000</option>
+  <option value="saab">25,000</option>
+  <option value="mercedes">30,000</option>
+  <option value="audi">40,000</option>
+  <option value="volvo">50,000</option>
+  <option value="saab">60,000</option>
+  <option value="mercedes">70,000</option>
+  <option value="audi">80,000</option>
+  <option value="mercedes">90,000</option>
+  <option value="audi">100,000</option>
+</select>  
+  <button type="button" data-next="Question19">Next</button>
+</div>  
+<div id="Question19">
+  <label for="miles">How far do you live from school (in miles)?</label>
+  <select name="miles" id="mileage">
+  <option value="volvo">5</option>
+  <option value="saab">10</option>
+  <option value="mercedes">15</option>
+  <option value="audi">20</option>
+  <option value="volvo">25</option>
+  <option value="saab">30</option>
+  <option value="mercedes">35</option>
+  <option value="audi">40</option>
+  <option value="volvo">45</option>
+  <option value="saab">50</option>
+  <option value="mercedes">55</option>
+  <option value="audi">60</option>
+  <option value="volvo">65</option>
+  <option value="saab">70</option>
+  <option value="mercedes">75</option>
+  <option value="audi">80</option>
+  <option value="mercedes">85</option>
+  <option value="audi">90</option>
+</select>     
+  <button type="button" data-next="Question20">Next</button>
+</div> 
+<div id="Question20">
+  Your personal vehicle is your preferred choice.
+    <button type="button" data-next="PersonalVehicle">Next</button>     
+</div>          
+<div id="PersonalVehicle">
+  Personal Vehicle
+    <p><img src="https://i.pinimg.com/originals/f7/57/38/f7573819ae5a015be2ac998c3335a87b.png" width="292.5" height="154.9965" alt = "Car"></p>
+    <p>Carbon Footprint</p>
+    <p> At 21.6 MPG, a single passenger vehicle emits 411 grams of CO2/mile driven</p>
+    <p>Average miles driven per year is about 11,400 miles. This approximates 4.7 metric tons of CO2 into the atmosphere per vehicle per year</p>
+    <a href="https://www.csus.edu/parking-transportation/parking/permit-pricing.html" target="_blank">Parking Permit Pricing</a>
+    <button type="button" data-next="Information">Next</button>     
+</div>
+<div id="RideshareCarpool">
+  Ride Share / Carpooling
+    <p><img src="https://techcrunch.com/wp-content/uploads/2019/09/Uber-Eats-App-Merge.png" width="292.5" height="154.9965" alt = "Uber"></p>
+    <a href="https://www.csus.edu/parking-transportation/alternative-transportation/carpooling.html" target="_blank">Sac State Carpooling</a>
+    <button type="button" data-next="Information">Next</button>      
+</div>  
+ <div id="Bus">
+    <p><img src="https://www.csus.edu/news/files/HornetShuttle.jpg" alt = "Hornet Shuttle"></p>
+    <p><a href="https://www.csus.edu/parking-transportation/alternative-transportation/transit-resources.html" target="_blank">Transit Lines</a></p>
+    <p><a href="https://www.csus.edu/parking-transportation/shuttle/_internal/_documents/gold-line-table.pdf" target="_blank">Gold Line Information</a></p>
+    <p><a href="https://www.csus.edu/parking-transportation/shuttle/_internal/_documents/green-line-table.pdf" target="_blank">Green Line Information</a></p>
+    <p><a href="https://www.csus.edu/parking-transportation/shuttle/_internal/_documents/hornet-schedule.pdf" target="_blank">Hornet Line Information</a></p>
+    <p><a href="https://www.csus.edu/parking-transportation/shuttle/_internal/_documents/stinger-line-table-master.pdf" target="_blank">Stinger Line Information</a></p> 
+    <button type="button" data-next="Information">Next</button>    
+</div> 
+<div id="Bike">
+  Bike
+    <p><img src="https://statehornet.com/wp-content/uploads/2017/12/image1-2-900x675.jpg" alt = "Biking"></p>
+    <p><a href="https://www.csus.edu/parking-transportation/alternative-transportation/bicycles.html" target="_blank">Bicycles on Campus</a></p>
+    <p><a href="https://sacbike.org/resources/maps/" target="_blank">Sac Bike</a></p>
+    <p><a href="https://www.peakadventures.org/bike-shop" target="_blank">Peak Adventures</a></p>
+    <button type="button" data-next="Information">Next</button>     
+</div> 
+<div id="Walking">
+  Walking
+    <p><img src="https://www.csus.edu/international-programs-global-engagement/international-student-scholar-services/_internal/_images/orientation.png" alt = "Walking at Sac State"></p>  
+    <button type="button" data-next="Information">Next</button> 
+</div>                     
+<div id="Information">
+  Information About All Modes of Transportation
+    <p><button type="button" data-next="PersonalVehicle">Personal Vehicle</button>
+    <button type="button" data-next="RideshareCarpool">Rideshare/Carpooling</button> 
+    <button type="button" data-next="Bus">Bus/SacRT</button>
+    <p><button type="button" data-next="Bike">Bike</button>      
+    <button type="button" data-next="Walking">Walking</button></p>
+    <p><button type="button" data-next="Question0">Retake Survey</button></p>  
+</div>          
+ </article>
+    </section>
+    <script>
+var buttons = document.getElementsByTagName('button'),
+  questions = document.getElementsByTagName('div');
+for (var i = 0; i < buttons.length; i++) {
+  var button = buttons[i];
+  button.addEventListener('click', function() {
+    var target = this.getAttribute('data-next');
+    for (var j = 0; j < questions.length; j++) {
+      var question = questions[j];
+      if (question.id == target) {
+        question.classList.add('show');
+      } else if (question.classList.contains('show')) {
+        question.classList.remove('show');
+      }
+    }
+  });
+}
+    </script>
+  </body>
+</html>

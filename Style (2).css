@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    font-size: 40px; 
+}
+p{
+  text-align: center;
+  font-size: 30px;
+}
+body{
+   color: darkcyan; 
+}
+div {
+  text-align: center;
+  font-size: 30px;
+  display: none;
+}
+.show {
+  display: block;
+}
